@@ -12,9 +12,10 @@ import Error from './Error/Error';
 const App = () => {
   return (
     <div style={{ backgroundColor: '#0f1825' }}>
-      <Navbar />
+     
    
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={<NeetLanding />} />
           <Route path="/neet" element={<Neetpage />} />
@@ -22,10 +23,11 @@ const App = () => {
 
           <Route path="*" element={<Error/>} />
         </Routes>
+        <Fotter />
+
 
       </BrowserRouter>
-      <Fotter />
-
+      
     </div>
   );
 }
